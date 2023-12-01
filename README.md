@@ -280,7 +280,7 @@ Original TLS assignment completed by [@rutaihwa](https://github.com/hapijs/unive
 
 This lesson completes a basic token based authentication system. Currently, our server only has two routes: `/version` and `/authenticate`.
 Only users with authentic bearer tokens can access server routes. See token strategy in: `./lib/authtoken.js`. The `lib/authtoken.js` strategy
-is crude supporting one static token.  On the `/authenticate` route we turn off the requirement for an authentic bearer token
+is crude supporting one static token.  On the `/authenticate` route we turn off the requirement for an authenticed bearer token
 with the `false` option because unauthenticated users do not have bearer tokens yet. The false option exposes routes to
 public unauthenticated users.
 
